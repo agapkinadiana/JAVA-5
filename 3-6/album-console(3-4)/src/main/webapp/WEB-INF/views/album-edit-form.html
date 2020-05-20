@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Edit Album</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1>Edit an album:</h1>
+<form th:object="${editAlbumDto}" th:action="@{/albums/{id}(id=${editAlbumDto.id})}" method="post">
+    Title:
+    <input type="text" th:field="*{title}"/>
+    <br/>
+    Description:
+    <textarea th:field="*{description}"></textarea>
+    <input type="submit" value="Update"/>
+</form>
+<br/>
+<div th:if="${errorMessage}" th:utext="${errorMessage}"
+     style="color:red;font-style:italic;">
+</div>
+</body>

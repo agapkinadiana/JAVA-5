@@ -1,0 +1,16 @@
+
+csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÕËÃ‚8¢¨üëÖ-
+{squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¾Î›Š8¢¨üëÖ-
+csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(“°¡«8¢¨üëÖ-
+csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÊÂ€Ô8¢¨üëÖ-
+hsquid:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‰ğ—Çıÿÿÿÿ8¢¨üëÖ-
+csquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ê‚Í8¢¨üëÖ-
+hsquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(†ÃÂŠıÿÿÿÿ8¢¨üëÖ-
+csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(À¹Î8¢¨üëÖ-
+rsquid:S2068"V'password' detected in this expression, review this potentially hard-coded credential.(ˆØ„–8¢¨üëÖ-
+Asquid:S2068" Remove this hard-coded password.(¼©¼æøÿÿÿÿ8¢¨üëÖ-
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8¢¨üëÖ-
+Rsquid:S1153"1Directly append the argument of String.valueOf().(†ÃÂŠıÿÿÿÿ8¢¨üëÖ-
+hsquid:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‰ğ—Çıÿÿÿÿ8¢¨üëÖ-
+Psquid:S1066"/Merge this if statement with the enclosing one.(ˆÎÏ•üÿÿÿÿ8¢¨üëÖ-
+hsquid:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‰ğ—Çıÿÿÿÿ8¢¨üëÖ-

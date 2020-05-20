@@ -1,0 +1,6 @@
+
+°%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'javax.faces.validator.ValidatorException' which is a runtime exception.(†åùºıÿÿÿÿ8“ñÏ·Ø-
+Isquid:S1068"+Remove this unused "matcher" private field.(¥½³Ú8ËöÚ»Ø-
+bsquid:S2583"DChange this condition so that it does not always evaluate to "false"(€í‘8ËöÚ»Ø-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ğª¢Â8ÌŞÙ»Ø-
+Isquid:S1068"+Remove this unused "pattern" private field.(¬ğ8±èÙ»Ø-

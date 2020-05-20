@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Add Album</title>
+    <link rel="stylesheet" type="text/css" th:href="@{resources/static/css/style.css}"/>
+</head>
+<body>
+<h1>Create an album:</h1>
+<form th:action="@{/albums}"
+      th:object="${albumDto}" method="POST">
+    Artist Name:
+    <input type="text" th:field="*{artist}"/>
+    <span class="validationError"
+          th:if="${#fields.hasErrors('artist')}"
+          th:errors="*{artist}">
+            </span>
+    <br/>
+    Title:
+    <input type="text" th:field="*{title}"/>
+    <span class="validationError"
+          th:if="${#fields.hasErrors('title')}"
+          th:errors="*{title}">
+    </span>
+    <br/>
+    Release year:
+    <input type="text" th:field="*{releaseYear}"/>
+    <span class="validationError"
+          th:if="${#fields.hasErrors('releaseYear')}"
+          th:errors="*{releaseYear}">
+    </span>
+    <br/>
+    Description:
+    <textarea th:field="*{description}"></textarea>
+    <span class="validationError"
+          th:if="${#fields.hasErrors('description')}"
+          th:errors="*{description}">
+    </span>
+    <input type="submit" value="Create"/>
+</form>
+<br/>
+<div th:if="${errorMessage}" th:utext="${errorMessage}"
+     style="color:red;font-style:italic;">
+</div>
+</body>

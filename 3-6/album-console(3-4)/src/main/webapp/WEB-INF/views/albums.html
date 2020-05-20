@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Albums</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    <script th:src="@{/resources/static/js/albums.js}"></script>
+</head>
+<body>
+<h1>Album List</h1>
+<a href="/albums/create">Add Album</a>
+<br/><br/>
+<div>
+    <table border="1">
+        <thead>
+        <tr>
+            <td>Artist</td>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Release year</td>
+        </tr>
+        </thead>
+        <th:block th:each="album : ${albums}">
+            <tr th:id="${album.id}+'-tr'">
+                <td th:text="${album.artist.name}"></td>
+                <td th:text="${album.title}"></td>
+                <td th:text="${album.description}"></td>
+                <td th:text="${album.releaseYear}"></td>
+                <td>
+                    <button th:onclick="'editAlbum(' + ${album.id} + ');'">Edit</button>
+                </td>
+                <td>
+                    <button th:onclick="'deleteAlbum(' + ${album.id} + ');'">Delete</button>
+                </td>
+            </tr>
+        </th:block>
+    </table>
+</div>
+</body>
+</html>
