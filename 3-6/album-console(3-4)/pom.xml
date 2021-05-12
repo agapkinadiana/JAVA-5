@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <spring.ver>5.1.4.RELEASE</spring.ver>
+        <spring.ver>5.2.10.RELEASE</spring.ver>
         <spring-cloud.version>Hoxton.M3</spring-cloud.version>
     </properties>
 
